@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Recursos/poker (1).svg" type="image/x-icon">
+    <title>Blackjack</title>
+</head>
+<body class="w-full h-full bg-gray-300">
+
+    <header class="flex items-center justify-center w-full h-20 text-3xl font-semibold tracking-wide text-white bg-black shadow-lg">
+        <p class="border-b-4 border-red-700">Blackjack</p>  
+        <img src="assets/Recursos/logo.svg" alt="logo">
+    </header>
+
+    <div class="flex flex-wrap items-center justify-center pt-2 pl-2">
+        <button id="btnNue" class="px-6 py-4 mr-2 font-semibold text-white bg-red-600 rounded shadow-lg hover:bg-red-700">Nuevo Juego</button>
+        <button id="btnPed" class="px-6 py-4 mr-2 font-semibold text-white bg-blue-600 rounded shadow-lg hover:bg-blue-700">Pedir Carta</button>
+        <button id="btnDet" class="px-6 py-4 mr-2 font-semibold text-white bg-blue-600 rounded shadow-lg hover:bg-blue-700">Detener</button>
+    </div>
+
+   
+        <div class="flex flex-wrap py-8 pl-64">
+            <h1 class="text-2xl font-semibold">Jugador - <small>0</small></h1>
+            <div id="cartas-jugador" class="flex pl-24">
+                <!-- <img src="assets/cartas/4C.png" alt="cartas" class="w-32">  -->
+            </div>
+        </div>
+  
+        <div class="flex flex-wrap pl-64">
+            <h1 class="text-2xl font-semibold">Computadora - <small>0</small></h1>
+            <div id="cartas-computadora" class="flex pl-12">
+                <!-- <img src="assets/cartas/4C.png" alt="cartas" class="w-32"> -->
+            </div>
+        </div>
+    
+    <script src="assets/js/underscore-min.js"></script>
+    <script src="assets/js/juego-min.js"></script>
+</body>
+</html>
